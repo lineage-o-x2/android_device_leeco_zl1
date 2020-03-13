@@ -223,12 +223,15 @@ etc/firmware/cppf.mdt:vendor/firmware/cppf.mdt
 vendor/lib/libcppf.so
 
 # Fingerprint sensor
-bin/gx_fpd:vendor/bin/gx_fpd
-lib64/hw/fingerprint.msm8996.so:vendor/lib64/hw/fingerprint.msm8996.so
+bin/gx_fpd:vendor/bin/gx_fpd|3b4c830833a0806e4d21d7f34ced9f133e3672ca
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.0-service.leeco_zl1|9be47e51c6d5566ec2f80a1fb59bc7e695b6fb81
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.0-service.leeco_zl1.rc
+lib64/hw/fingerprint.msm8996.so:vendor/lib64/hw/fingerprint.msm8996.so|3e8a1844bec062e81e018fcd85c251e026abeb11
 lib64/hw/gxfingerprint5118m.default.so:vendor/lib64/hw/gxfingerprint5118m.default.so
-lib64/libfp_client5118m.so:vendor/lib64/libfp_client5118m.so
+lib64/libfp_client5118m.so:vendor/lib64/libfp_client5118m.so|b32e9a4e64ae77537a921bbb6ff3a16655f36ba0
 lib64/libfpnav5118m.so:vendor/lib64/libfpnav5118m.so
-lib64/libfpservice5118m.so:vendor/lib64/libfpservice5118m.so
+lib64/libfpservice5118m.so:vendor/lib64/libfpservice5118m.so|88af9c9628a7ea8ad17cc791a2e30e227531d866
+vendor/lib64/libgxbinder.so|72dce8a8238d94c777e7a95cd66911a7c845e5c6
 
 # NFC firmware - from oneplus3 - 9/PKQ1.181203.001/1903190014
 vendor/lib/libpn548ad_fw.so|e78f2c9e7a5cb0001d2f71a69f37ec8261fb05b8
